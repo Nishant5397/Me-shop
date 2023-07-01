@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>MeShop.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="brand">
+      <a href="../index.html">MeShop.</a>
+    </div>
+    <div class="nav-items">
+      <a href="../index.html">Home</a>
+      <a href="../login/index.html">Login</a>
+      <a href="../profile/index.html">Profile</a>
+      <a href="../cart/index.html">My Cart</a>
+    </div>
+
+    <div class="mobile-nav">
+      <div id="nav-links" class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../login/index.html">Login</a>
+        <a href="../profile/index.html">Profile</a>
+        <a href="../cart/index.html">My Cart</a>
+      </div>
+      <div class="menu-btn" id="menu-btn" onclick="openMenu()">
+        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <aside>
+      <!-- <section>
+          <title>Colors</title>
+          <ul>
+            <li>
+              <input id="red" type="checkbox" name="color" />
+              <label for="red">Red</label>
+            </li>
+            <li>
+              <input id="blue" type="checkbox" name="color" />
+              <label for="blue">Blue</label>
+            </li>
+            <li>
+              <input id="green" type="checkbox" name="color" />
+              <label for="green">Green</label>
+            </li>
+            <li>
+              <input id="black" type="checkbox" name="color" />
+              <label for="black">Black</label>
+            </li>
+            <li>
+              <input id="white" type="checkbox" name="color" />
+              <label for="white">White</label>
+            </li>
+          </ul>
+        </section> -->
+      <!-- <section>
+          <title>Sizes</title>
+          <ul>
+            <li>
+              <input id="s" type="checkbox" name="color" />
+              <label for="s">S</label>
+            </li>
+            <li>
+              <input id="m" type="checkbox" name="color" />
+              <label for="m">M</label>
+            </li>
+            <li>
+              <input id="l" type="checkbox" name="color" />
+              <label for="l">L</label>
+            </li>
+            <li>
+              <input id="xl" type="checkbox" name="color" />
+              <label for="xl">XL</label>
+            </li>
+          </ul>
+        </section> -->
+      <section>
+        <title>Rating</title>
+        <input type="range" id="range" min="0" max="5" value="0" list="values" oninput="filterCat()" />
+        <datalist id="values">
+          <option value="0" label="0"></option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5" label="5"></option>
+        </datalist>
+      </section>
+      <section class="price-range">
+        <title>Price Range</title>
+        <ul>
+          <li>
+            <input id="0-25" value="0-25" onclick="selectRange(this)" type="checkbox" name="prange" />
+            <label for="0-25">$0 to $25</label>
+          </li>
+          <li>
+            <input id="25-50" value="25-50" onclick="selectRange(this)" type="checkbox" name="prange" />
+            <label for="25-50">$25 to $50</label>
+          </li>
+          <li>
+            <input id="50-100" value="50-100" onclick="selectRange(this)" type="checkbox" name="prange" />
+            <label for="50-100">$50 to $100</label>
+          </li>
+          <li>
+            <input id="100on" value="100-on" onclick="selectRange(this)" type="checkbox" name="prange" />
+            <label for="100on">$100 onwards</label>
+          </li>
+        </ul>
+      </section>
+      <button class="filter-btn">Apply Filter</button>
+    </aside>
+    <main-content class="main-content">
+      <input id="search-bar" oninput="filterCat()" type="text" placeholder="Search" />
+      <div class="filters">
+        <div class="filter active" id="filter-all" onclick="allCat(this)">All</div>
+        <div class="filter" id="filter-mens" onclick="mensCat(this)">Mens</div>
+        <div class="filter" id="filter-womens" onclick="womensCat(this)">Womens</div>
+        <div class="filter" id="filter-jewellery" onclick="jwelCat(this)">Jewellery</div>
+        <div class="filter" id="filter-electronics" onclick="electronicCat(this)">Electronics</div>
+      </div>
+      <!-- mens section -->
+      <section>
+        <title>Men's Clothing</title>
+        <div class="items" id="mens-section">
+
+        </div>
+      </section>
+      <!-- womens section -->
+      <section>
+        <title>Women's Clothing</title>
+        <div class="items" id="womens-section">
+
+        </div>
+      </section>
+      <!-- jwel's section -->
+      <section>
+        <title>Jewellery</title>
+        <div class="items" id="jewellery-section">
+
+        </div>
+      </section>
+      <!-- electronics section -->
+      <section>
+        <title>Electronics</title>
+        <div class="items" id="electronics-section">
+
+        </div>
+      </section>
+    </main-content>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
