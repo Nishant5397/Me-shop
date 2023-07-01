@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <nav>
+    <div class="brand">
+      <a href="../index.html">Login Page</a>
+    </div>
+    <div class="nav-items">
+        <a href="../index.html">Home</a>
+        <a href="../signup/index.html">Signup</a>
+    </div>
+
+      <div class="mobile-nav">
+        <div id="nav-links" class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="../signup/index.html">Signup</a>
+        </div>
+        <div class="menu-btn" id="menu-btn" onclick="openMenu()">
+          <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </div>
+      </div>
+  </nav>
+  <main class="main-conatiner">
+    <h4>Login</h4>
+    <form id="form">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="pass" placeholder="Password" required>
+      <div class="error">
+        <span class="signup-err"><i class="fa-solid fa-circle-exclamation"></i> Please sign up first.</span>
+        <span class="incorrect-pass"><i class="fa-solid fa-circle-exclamation"></i> The username or password you entered
+          is incorrect.</span>
+      </div>
+      <button type="submit" class="signup-btn" id="signup-btn">Login</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

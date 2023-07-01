@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    display: none;
+}
+
+.pop-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.text button #gotohome{
+    background-color: black;
+    color: white;
+    width: 90px;
+    height: 30px;
+}
+
+#gotohome{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+}

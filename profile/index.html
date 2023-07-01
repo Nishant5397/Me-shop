@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Profile</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="brand">
+        <a href="../index.html">Profile</a>
+      </div>
+      <div class="nav-items">
+          <a href="../index.html">Home</a>
+          <a href="../cart/index.html">My Cart</a>
+      </div>
+
+      <div class="mobile-nav">
+        <div id="nav-links" class="nav-links" >
+          <a href="../index.html">Home</a>
+          <a href="../cart/index.html">My Cart</a>
+        </div>
+        <div class="menu-btn" id="menu-btn" onclick="openMenu()">
+          <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </div>
+      </div>
+    </nav>
+    <main class="main-conatiner">
+      <div class="proile-div">
+        <h1>My Profile</h1>
+        <input type="text" placeholder="First Name" id="f-name">
+        <input type="text" placeholder="Last Name" id="l-name">
+        <div class="message">
+          <span class="infoSaved-mess"><i class="fa-solid fa-circle-check" style="color: #30bb47;"></i> Your changes has been successfully saved</span>
+        </div>
+        <button type="button" id="saveInfo-btn">Save Info</button>
+      </div>
+      <form class="pass-div" id="pass-form">
+        <h1>Change Password</h1>
+        <input type="password" id="old-pass" placeholder="Old Password">
+        <input type="password" id="new-pass" placeholder="Password">
+        <input type="password" id="cnew-pass" placeholder="Confirm Password">
+        <div class="messages">
+          <span class="err-old"><i class="fa-solid fa-circle-exclamation"></i> Your old password was entered incorrectly</span>
+          <span class="newpass-mismatch"><i class="fa-solid fa-circle-exclamation"></i> Password mismatch</span>
+          <span class="pass-changed"><i class="fa-solid fa-circle-check" style="color: #30bb47;"></i> Password changed</span>
+        </div>
+        <button type="submit" id="changepass-btn">Change Password</button>
+        <button type="button" id="logout-btn">Logout</button>
+      </form>
+    </main>
+    <script src="script.js" async defer></script>
+  </body>
+</html>

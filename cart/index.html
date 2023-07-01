@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+  <title>My Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="brand">
+      <a href="../index.html">Shopping Cart</a>
+    </div>
+    <div class="nav-items">
+      <a href="../shop/index.html">Home</a>
+      <a href="../profile/index.html">Profile</a>
+      <a href="../cart/index.html">Cart Page</a>
+    </div>
+
+    <div class="mobile-nav">
+      <div id="nav-links" class="nav-links">
+        <a href="../shop/index.html">Home</a>
+        <a href="../profile/index.html">Profile</a>
+        <a href="../cart/index.html">Cart Page</a>
+      </div>
+      <div class="menu-btn" id="menu-btn" onclick="openMenu()">
+        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <h1>My Cart</h1>
+    <div class="main-content">
+      <div class="items" id="cart-container">
+
+      </div>
+      <aside id="checkout-container">
+        <p>Checkout List</p>
+        <section id="checkout-list">
+
+        </section>
+        <button id="checkout-btn">Click To Checkout</button>
+      </aside>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
